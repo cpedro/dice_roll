@@ -62,8 +62,6 @@ void roll_dice(char *str)
  */
 int main(int argc, char *argv[])
 {
-  int n, d;
-
   if (argc < 2)
   {
     printf("usage: %s <X>d<Y> [<X>d<Y> ...]\n", argv[0]);
