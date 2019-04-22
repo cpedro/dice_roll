@@ -49,9 +49,8 @@
 void roll_dice(char *str)
 {
   int i, n, d, sum = 0;
-  sscanf(str, "%dd%d", &n, &d);
 
-  srandomdev();
+  sscanf(str, "%dd%d", &n, &d);
   for (i = 0; i < n; ++i)
     sum += (random() % d) + 1;
   printf("%dd%d = %d\n", n, d, sum);
@@ -62,12 +61,7 @@ void roll_dice(char *str)
  */
 int main(int argc, char *argv[])
 {
-  if (argc < 2)
-  {
-    printf("usage: %s <X>d<Y> [<X>d<Y> ...]\n", argv[0]);
-    return EXIT_FAILURE;
-  }
-
+  srandomdev();
   for (--argc, ++argv; argc; --argc, ++argv)
     roll_dice(argv[0]);
 
