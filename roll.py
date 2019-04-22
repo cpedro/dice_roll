@@ -11,9 +11,6 @@ Command line arguments:
 Author: E. Chris Pedro
 Version: 2019-04-22
 
-Some code taken from Mike Pound's script that does the same.  Mike's script
-can be found here: <https://github.com/mikepound/pwned-search>
-
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
